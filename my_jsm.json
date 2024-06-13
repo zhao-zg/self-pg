@@ -12,6 +12,26 @@
 			"ext": "./lib/douban.json"
 		},
 		{
+			"key":"Youtube",
+			"name":"Youtube",
+			"type":3,
+			"api": "csp_Youtube",
+			"searchable": 1,
+			"quickSearch": 0,
+			"changeable": 0,
+			"ext":{
+				"json":"./lib/youtube_1189.json",
+				"type":"直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
+				"proxy":"proxy",
+				"keywords":"排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
+				"codecs":""
+			},
+			"style": {
+				"type": "rect",
+				"ratio": 1.5
+			}
+		},
+		{
 			"key": "网盘配置",
 			"name": "网盘及彈幕配置",
 			"type": 3,
@@ -82,23 +102,6 @@
 			"api": "./lib/live2vod.js",
 			"ext": "./lib/feimaolive.json"
 		},
-		{
-	            "key": "Youtube",
-	            "name": "Youtube",
-	            "type": 3,
-	            "api": "csp_Youtube",
-	            "searchable": 1,
-	            "quickSearch": 0,
-	            "changeable": 0,
-	            "ext": {
-	                "type":"水流之音聖樂團SOLSO#台北市召會主日聚會話語服事#新人 NEWMAN#Goshen Prayer#好東西集散地#水深・火熱",
-	                "proxy": "proxy"
-	            },
-	            "style": {
-	                "type": "rect",
-	                "ratio": 1.5
-	            }
-	        },
 		{
 			"key" : "看球",
 			"name" : "\uD83C\uDF1088┃看球┃体育",
@@ -171,6 +174,7 @@
 		{"key":"Wobg","name":"玩偶表哥|网盘","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$./lib/wogg.json"},
 		{"key":"yydsys","name":"玩你老哥|网盘","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://tv.yydsys.top/$$$proxy$$$1$$$./lib/wogg.json"},
 		{"key":"Gaoqing","name":"中国高清网|网盘","type":3,"api":"csp_Gaoqing","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://gaoqing.la/$$$proxy$$$1"},
+		{"key":"Yinfans","name":"音范丝|磁力","type":3,"api":"csp_Gaoqing","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.yinfans.me/$$$proxy$$$1"},
 		{"key":"ddys","name":"低端影视|网盘","type":3,"api":"csp_Ddys","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://ddys.pro/$$$proxy$$$1$$$"},
 		{"key":"Xinshijue","name":"新视觉|网盘","type":3,"api":"csp_Xinshijue","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.80yy3.com/$$$proxy$$$1$$$./lib/wogg.json"},
 		{"key":"团长资源","name":"团长资源|网盘","type":3,"api":"csp_TZFile", "quickSearch":1, "changeable":1, "filterable":1, "timeout":60,"ext":"./lib/tokenm.json$$$proxy$$$1"},
@@ -184,10 +188,11 @@
 			"api": "csp_Bdys01",
 			"type": 3,
 			"filterable": 1,
-			"searchable":0,
+			"searchable":1,
 			"quickSearch": 1,
 			"searchable": 1,
-			"ext": "https://www.yjys.me/$$$null$$$1"
+			"timeout":60,
+			"ext": "./lib/tokenm.json$$$https://www.yjys01.com/$$$proxy$$$1"
 		},
 		{"key":"YunPan","name":"云盘资源|网盘","type":3,"api":"csp_YunPan","timeout":60, "ext":"./lib/tokenm.json$$$null$$$proxy$$$1"},
 		{"key":"YingSo","name":"影搜|网盘搜索","type":3,"api":"csp_YingSo","timeout":60, "ext":"./lib/tokenm.json"},
@@ -286,14 +291,6 @@
 				"页面代理":"proxy"
 			}
 		},
-		{"key":"XBPQ_BaiPiao","name":"白嫖影视|XBPQ","type":3,"api":"csp_XBPQ", "jar":"./lib/XBPQ.jar",
-			"ext": {
-				"地区":"[替换:大陆>>中国大陆#香港>>中国香港#台湾>>中国台湾]",
-				"分类": "电影$1#电视剧$2#动漫$3#短剧$4#综艺$5",
-				"分类url": "https://www.baipiaoys.com:9092/show/area/{area}/by/{by}/class/{class}/id/{cateId}/page/{catePg}/year/{year}.html",
-				"页面代理": "proxy"
-			}
-		},
 		{"key":"XBPQ_黑狐影院","name":"黑狐影院|XBPQ","type":3,"api":"csp_XBPQ", "jar":"./lib/XBPQ.jar",
 			"ext": {
 				"站名": "黑狐影院",
@@ -351,6 +348,20 @@
 		},
 		{"key": "XBPQ_麻衣影院","name":"麻衣影院|XBPQ","type":3,"api":"csp_XBPQ","searchable":1,"quickSearch":1,"filterable":1,"jar": "./lib/XBPQ.jar",
 			"ext": {"分类url":"https://www.huanyuxing.com/s/{cateId}/area/{area}/class/{class}/page/{catePg}/year/{year}.html","分类":"电影$id-a#电视剧$id-b#动漫$id-c#综艺$id-d"}
+		},
+		{
+			"key": "迅雷8",
+			"name": "迅雷吧|XBPQ|磁力",
+			"type": 3,
+			"api": "csp_XBPQ",
+			"jar": "./lib/XBPQ.jar",
+			"ext": {
+				"播放数组": "copylink&&</a>",
+				"播放链接": "alt=\"&&\"",
+				"简介": "b1f40f7888\"&&</p>",
+				"分类url": "https://xunlei8.cc/{cateId}-{class}-{year}-{area}-hot-{catePg}-30.html",
+				"分类": "电视剧$tv#电影$list"
+			}
 		},
 		{
 			"key": "小白",
@@ -559,7 +570,7 @@
 			"changeable": 0,
 			"filterable": 1
 		},
-		{ "key": "Ikanbot", "name": "爱看机器人", "type": 3, "api": "csp_Ikanbot", "searchable": 1, "quickSearch": 1, "filterable": 1, "changeable": 1 , "ext":"https://v.ikanbot.com$$$proxy"},
+		{ "key": "Ikanbot", "name": "爱看机器人", "type": 3, "api": "csp_Ikanbot", "searchable": 1, "quickSearch": 1, "filterable": 1, "changeable": 1 , "ext":"https://v.aikanbot.com$$$proxy"},
 		{ "key":"csp_YingShi","name":"影视|海外","type":3,"api":"csp_YingShi","ext":"proxy"},
 		{ 
 			"key": "泥巴", 
