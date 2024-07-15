@@ -132,35 +132,6 @@
 				"cookie":""
 			}
 		},{
-            "key": "GimyTV",
-            "name": "💕GimyTV",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "filterable": 0,
-            "timeout": 60,
-            "api": "csp_XBPQ",
-            "jar": "./lib/XBPQ.jar",
-            "ext": {
-                "主页url": "https://gimy.tv/",
-                "嗅探词": "index.m3u8#.mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
-                "数组": "class=\"myui-vodlist__box\">&&</div>",
-                "简介": "剧情简介</h3>&&</p>",
-                "线路数组": "class=\"title&&</div>",
-                "线路标题": ">&&</h3>",
-                "播放数组": "class=\"myui-content__list&&</ul>",
-                "播放列表": "<li&&</li>",
-                "播放标题": ">&&</a",
-                "播放链接": "href=\"&&\"",
-                "搜索数组": "lazyload\"&&</a",
-                "搜索图片": "data-original=\"&&\"",
-                "搜索标题": "title=\"&&\"",
-                "搜索链接": "href=\"&&\"",
-                "分类url": "https://gimy.tv/genre/{cateId}-{area}-{year}-{catePg}/by/{by}.html",
-                "分类": "电视剧$2#电影$1#综艺$3#动漫$4"
-            }
-        },{
 			"key": "360",
 			"name": "🛝360",
 			"type": 1,
@@ -168,6 +139,10 @@
 			"searchable": 1,
 			"changeable": 1,
 			"categories": [
+				"国产动漫",
+				"欧美动漫",
+				"日韩动漫",
+				"大陆综艺",
 				"NBA",
 				"足球",
 				"爽文短剧",
@@ -183,11 +158,7 @@
 				"韩国剧",
 				"欧美剧",
 				"台湾剧",
-				"日本剧",
-				"大陆综艺",
-				"国产动漫",
-				"欧美动漫",
-				"日韩动漫"
+				"日本剧"
 			]
 		},
 		{"key":"美剧迷","name":"美剧迷|网盘","type":3,"api":"csp_Meijumi", "quickSearch":1, "changeable":1, "filterable":1, "timeout":120,"ext":"./lib/tokenm.json$$$https://www.meijumi.net/$$$proxy$$$1"},
