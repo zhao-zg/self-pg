@@ -1,0 +1,10 @@
+{
+  "drives": [
+    {
+      "name": "哈利路亚",
+      "search": true,
+      "searchable": true,
+      "server": "http://alist.bxg.us.kg/"
+    }
+  ]
+}

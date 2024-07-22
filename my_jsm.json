@@ -41,10 +41,11 @@
 			"changeable": 0,
 			"ext":"./lib/tokenm.json"
 		},
+		{"key":"AList","name":"zzg分享|Alist","type":3,"api":"csp_AList","searchable":1,"filterable":1,"changeable":1,"ext":"./js/zzg-alistjar.json"},
 		{"key":"Local","name":"本地","type":3,"api":"csp_Local"},
 		{
 			"key": "pushshare_zzg",
-			"name": "zzg云盘分享",
+			"name": "zzg分享|云盘",
 			"type": 3,
 			"api": "csp_PushShare",
 			"searchable": 1,
@@ -52,13 +53,12 @@
 			"changeable": 1,
 			"filterable": 0,
 			"timeout": 60,
-			"ext": "./lib/tokenm.json$$$./lib/pushshare_zzg.txt$$$db$$$1",
+			"ext": "./lib/tokenm_dl.json$$$./lib/pushshare_zzg.txt$$$db$$$1",
 			"style": {
 				"type": "list",
 				"ratio": 1.1
 			}
 		},
-		{"key":"AList","name":"资源分享|Alist","type":3,"api":"csp_AList","searchable":1,"filterable":1,"changeable":1,"ext":"./js/alistjar.json"},
 		{"key":"PushShare","name":"资源分享|云盘","type":3, "api":"csp_PushShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/pushshare.txt$$$db$$$1",
 			"style": {
 				"type": "list",
