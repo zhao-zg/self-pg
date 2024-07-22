@@ -58,5 +58,5 @@
 "wgcf_vless_network":"ws",
 "wgcf_vless_tls":true,
 "libxl_url":"./libxl_thunder_sdk.so",
-"youtube_proxy":"127.0.0.1:10072"
+"youtube_proxy":"proxy"
 }
