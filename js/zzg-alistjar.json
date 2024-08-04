@@ -1,10 +1,16 @@
 {
   "drives": [
     {
-      "name": "哈利路亚",
+      "name": "主内收集",
       "search": true,
       "searchable": true,
       "server": "http://alist.bxg.us.kg/"
+    },
+	{
+      "name": "内网自用",
+      "search": true,
+      "searchable": true,
+      "server": "http://192.168.10.3:9941/"
     }
   ]
 }
